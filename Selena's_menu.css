@@ -1,10 +1,7 @@
-
-/* Universal box sizing */
 * {
   box-sizing: border-box;
 }
 
-/* Body setup */
 html, body {
   overflow-x: hidden;
 }
@@ -17,16 +14,9 @@ body {
   color: #000;
 }
 
-/* =========================
-   Main Container
-========================= */
-.menu-wrapper {
-  padding: 40px 60px;
-  min-height: 100vh;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-/* Blue Border Wrapper */
+/* ===============================================
+   MAIN WRAPPER
+=============================================== */
 .wrapper {
   border: 6px solid #0074d9;
   padding: 40px 60px;
@@ -36,37 +26,16 @@ body {
   background-color: #fff;
 }
 
-=
-@media (max-width: 768px) {
-  .wrapper {
-    border: 4px solid #0074d9;
-    padding: 20px;
-  }
-
-  header img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  nav ul {
-    text-align: center;
-    padding: 0;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 8px 0;
-  }
-
-  .hours p {
-    font-size: 0.9em;
-  }
+.menu-wrapper {
+  padding: 40px 60px;
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-
-/* =========================
-   Header & Navigation
-========================= */
+/* ===============================================
+   HEADER & NAVIGATION
+=============================================== */
 header {
   text-align: center;
   margin-top: 40px;
@@ -83,7 +52,6 @@ header img {
   object-fit: contain;
 }
 
-/* Navigation */
 nav {
   margin-top: 0;
   margin-bottom: 10px;
@@ -111,9 +79,9 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* =========================
-   Restaurant Hours
-========================= */
+/* ===============================================
+   HOURS
+=============================================== */
 .hours {
   text-align: center;
   font-size: 1.1em;
@@ -124,9 +92,9 @@ nav ul li a:hover {
   margin: 5px 0;
 }
 
-/* =========================
-   Feature Heading
-========================= */
+/* ===============================================
+   FEATURE TITLE
+=============================================== */
 .start-day {
   text-align: center;
   color: #FFD700;
@@ -138,9 +106,9 @@ nav ul li a:hover {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* =========================
-   Menu Columns
-========================= */
+/* ===============================================
+   GENERAL MENU LAYOUT
+=============================================== */
 .menu-columns {
   display: flex;
   flex-wrap: wrap;
@@ -152,7 +120,6 @@ nav ul li a:hover {
   min-width: 300px;
 }
 
-/* Unified Headings */
 .menu-wrapper h2,
 .menu-wrapper h3,
 .menu-wrapper h4 {
@@ -166,10 +133,14 @@ nav ul li a:hover {
   letter-spacing: 0.5px;
   font-size: clamp(22px, 2.2vw, 28px);
 }
+/* Center these specific section headings */
+.soups-salads h2,
+.desserts-beverages h2,
+.menu-column h2,        
+.to-go-items-title {
+    text-align: center !important;
+}
 
-/* =========================
-   Menu Items
-========================= */
 .item-title {
   font-weight: bold;
   margin-bottom: 5px;
@@ -191,151 +162,202 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-/* =========================
-   Footer
-========================= */
+/* ===============================================
+   FOOTER
+=============================================== */
 footer {
   text-align: center;
   margin-top: 60px;
   font-size: 0.9em;
   color: #666;
 }
-
-/* =========================
-   Plate Combos
-========================= */
+/* ===============================================
+   PLATE COMBOS
+=============================================== */
 .plate-combos {
   margin-top: 50px;
   text-align: center;
 }
 
+.plate-combos h3 {
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 2px solid #0074d9;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 15px;
+}
+
 .combo-note {
   font-style: italic;
   margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 .combo-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .combo-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-bottom: 5px;
-}
-
-.combo-name {
-  flex: 1;
-  font-size: 1.02em;
+  border-bottom: 1px dotted #ccc;
+  padding: 6px 0;
 }
 
 .combo-row .price {
-  float: none;
-  margin-left: 16px;
-  white-space: nowrap;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-/* =========================
-   Grande Pupusas
-========================= */
-.pupusas {
-  margin-top: 36px;
+.choices {
   text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+/* ===============================================
+   CHOICES COLUMNS (Tab-Spaced)
+=============================================== */
+.choices-columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin: 30px auto 0;
+  max-width: 900px;
+  position: relative;
+}
+
+.choice-col {
+  flex: 1;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000;
+}
+
+.choice-col strong {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+/* Spacing for Choices of Pupusas + Tamales */
+/* Spacing for Choices of Pupusas / Tamales */
+.choice-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 0.25rem;      
+  column-gap: 1rem;     
+  line-height: 1.1;      
+}
+
+.choice-list span {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+
+/* Divider line between columns */
+.choices-columns::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 60px;
+  background-color: #0074d9;
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .choices-columns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .choices-columns::before {
+    display: none;
+  }
+
+  .choice-list {
+    gap: 1rem;
+  }
+}
+
+/* ===============================================
+   GRANDE PUPUSAS
+=============================================== */
+.pupusas {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.pupusas h4 {
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #0074d9;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 15px;
 }
 
 .pupusas-note {
-  text-align: center;
   font-style: italic;
   margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 .pupusa-columns {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .pupusa-col {
   flex: 1;
   min-width: 320px;
+  text-align: left;
 }
 
 .pupusa-item {
-  border-bottom: none;
-  margin: 0;
-}
-
-.pupusa-item + .pupusa-item {
-  margin-top: 14px;
+  margin-bottom: 15px;
 }
 
 .pupusa-item .item-title {
   display: flex;
-  align-items: baseline;
-  gap: 12px;
+  justify-content: space-between;
   font-weight: 700;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px;
-  text-transform: none;
-}
-
-.pupusas .price {
-  float: none !important;
-  margin-left: auto;
-  white-space: nowrap;
-  font-weight: 700;
+  font-size: 1rem;
 }
 
 .pupusa-item .item-description {
-  text-align: left;
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-/* =========================
-   Bundles Section
-========================= */
-.bundles {
-  margin-top: 10px;
-}
-
-.bundles .item-title {
-  font-family: 'Georgia', serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  letter-spacing: 0.5px;
-  color: #000;
-  margin-bottom: 5px;
-}
-
-.bundle-subtitle {
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  margin-left: 0.5rem;
   color: #333;
-  margin-bottom: 10px;
-  letter-spacing: 0.4px;
 }
 
-.bundles .item-description {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #000;
-}
-
-/* =========================
-   Specials 
-========================= */
+/* Specials Circle */
 .pupusa-col .specials {
-  margin-top: 10px;
-  margin-left: auto;
+  margin: 25px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -347,17 +369,12 @@ footer {
   border-radius: 50%;
   box-shadow: 0 0 8px rgba(255,165,0,0.3);
   text-align: center;
-  color: #000;
 }
 
 .pupusa-col .specials .item-title {
-  font-family: 'Georgia', serif;
-  font-weight: 700;
   font-style: italic;
   font-size: 1.2rem;
-  color: #000;
   margin-bottom: 6px;
-  text-shadow: 0 0 3px rgba(255,255,0,0.7);
 }
 
 .pupusa-col .specials .item-description {
@@ -365,24 +382,9 @@ footer {
   line-height: 1.4;
 }
 
-/* =========================
-   Footnotes for Mixes
-========================= */
-.mixes {
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: #000;
-  margin-top: 20px;
-  text-align: left;
-}
-
-.mixes strong {
-  font-weight: 700;
-}
-
-/* =========================
-   Entrees Section
-========================= */
+/* ===============================================
+   ENTREES SECTION
+=============================================== */
 .entrees {
   text-align: center;
   margin-top: 40px;
@@ -404,6 +406,7 @@ footer {
   gap: 40px;
   justify-content: space-between;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .entrees-column {
@@ -412,154 +415,17 @@ footer {
   text-align: left;
 }
 
-/* Fiesta Plate Box */
-.special-box {
-  border: 2px solid #2e8b57;
-  border-radius: 6px;
-  padding: 20px;
-  background-color: #f7fff7;
-  box-shadow: 0 0 10px rgba(46,139,87,0.3);
-  margin-bottom: 25px;
-}
-
-.special-box .item-title {
-  font-weight: 700;
-  color: #000;
-  text-shadow: 0 0 3px rgba(50,205,50,0.4);
-}
-
-.special-box .item-description {
-  font-size: 0.96rem;
-  line-height: 1.5;
-  color: #000;
-}
-
-/* Caribbean Heading */
-.caribbean-heading {
-  color: #0074d9;
-  font-family: "Brush Script MT", cursive;
-  font-size: 2em;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 10px;
-  -webkit-text-stroke: 1px #040404;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-}
-
-/* Entree Items */
-.entrees .item-title {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  color: #000;
-}
-
-.entrees .item-description {
-  font-size: 0.96rem;
-  line-height: 1.45;
-  margin-bottom: 14px;
-}
-
-/* =========================
-   Mobile Responsive
-========================= */
-@media (max-width: 768px) {
-  .menu-wrapper {
-    padding: 20px;
-  }
-
-  header {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  header img {
-    width: 100%;
-    max-height: 300px;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 8px 0;
-  }
-
-  .menu-columns {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .menu-wrapper h2,
-  .menu-wrapper h3,
-  .menu-wrapper h4 {
-    font-size: clamp(20px, 5vw, 24px);
-    margin: 30px 0 12px;
-  }
-
-  .start-day {
-    font-size: 1.8em;
-  }
-
-  .pupusa-col .specials {
-    margin: 25px auto;
-  }
-
-  .special-box {
-    width: 90%;
-  }
-
-  footer {
-    font-size: 0.8em;
-    margin-top: 40px;
-  }
-}
-.entrees .item {
-  margin-bottom: 20px;
-}
-
-.entrees .item-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  font-weight: 700;
-  font-size: 1.05rem;
-  margin-bottom: 5px;
-}
-
-.entrees .item-description {
-  display: block;
-  visibility: visible;
-  opacity: 1;
-  font-size: 1rem;
-  color: #000;
-  line-height: 1.6;
-  margin-top: 4px;
-  margin-bottom: 14px;
-  text-align: left;
-  word-wrap: break-word;
-}
-
-.entrees-column {
-  flex: 1;
-  min-width: 320px;
-  text-align: left;
-}
-
-.entrees-header {
-  margin-bottom: 30px;
-
-/* ============================= */
-/* Bright color glow refinements */
-/* ============================= */
-
-/* Fiesta Plate */
+/* ===============================================
+   SPECIAL BOX STYLES
+=============================================== */
 .special-box {
   border: 3px dashed #5ac16a;              
   border-radius: 12px;
   padding: 18px 22px;
   background-color: #eaffea;                
   box-shadow:
-    inset 0 0 20px rgba(90,193,106,0.7),   
-    0 0 14px rgba(90,193,106,0.6);          
+    inset 0 0 20px rgba(90,193,106,0.7),
+    0 0 14px rgba(90,193,106,0.6);
   margin-bottom: 25px;
   transition: box-shadow 0.2s ease-in-out;
 }
@@ -568,26 +434,17 @@ footer {
   font-weight: 800;
   font-size: 1.1rem;
   color: #000;
-  text-shadow: 0 0 6px rgba(90,193,106,0.7); /* stronger green text glow */
+  text-shadow: 0 0 6px rgba(90,193,106,0.7);
 }
 
-.special-box .item-description {
-  margin-top: 6px;
-  font-size: 1rem;
-  line-height: 1.55;
-  color: #000;
-}
-
-
-/* Mi Gente */
 .migente {
-  border: 3px dashed #f55f5f;               
+  border: 3px dashed #f55f5f;
   border-radius: 12px;
   padding: 18px 22px;
-  background-color: #ffeaea;               
+  background-color: #ffeaea;
   box-shadow:
-    inset 0 0 20px rgba(245,95,95,0.7),     
-    0 0 14px rgba(245,95,95,0.6);          
+    inset 0 0 20px rgba(245,95,95,0.7),
+    0 0 14px rgba(245,95,95,0.6);
   margin-top: 20px;
   transition: box-shadow 0.2s ease-in-out;
 }
@@ -596,118 +453,194 @@ footer {
   font-weight: 800;
   font-size: 1.1rem;
   color: #000;
-  text-shadow: 0 0 6px rgba(245,95,95,0.7); 
+  text-shadow: 0 0 6px rgba(245,95,95,0.7);
 }
 
-.migente .item-description {
-  margin-top: 6px;
+/* ===============================================
+   DESSERTS / BEVERAGES / TO-GO / THANK YOU
+=============================================== */
+.desserts-beverages {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 2px solid #003366;
+}
+
+.desserts-beverages h2 {
+  text-transform: uppercase;
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+  border-bottom: 1px solid #003366;
+  padding-bottom: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.desserts-beverages .menu-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.desserts-beverages .menu-column {
+  flex: 1 1 46%;
+  min-width: 320px;
+}
+
+.desserts-beverages .item {
+  margin-bottom: 0.6rem;
+}
+
+.desserts-beverages .item-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+.desserts-beverages .item-description {
+  font-size: 0.92rem;
+  line-height: 1.35;
+  color: #222;
+  margin-left: 0.4rem;
+}
+
+.desserts-beverages .price {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.to-go-list {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-left: 0.4rem;
+}
+
+/* ===============================================
+   BEVERAGES INNER COLUMNS (Right Side)
+=============================================== */
+.inner-beverages {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.inner-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.inner-col .item {
+  margin-bottom: 0.5rem;
+}
+
+.inner-col .item-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.inner-col .item-description {
+  font-size: 0.92rem;
+  line-height: 1.35;
+  margin-left: 0.4rem;
+}
+
+.inner-col .price {
+  font-weight: 700;
+  margin-top: 0.2rem;
+}
+
+/* ===============================================
+   THANK YOU BOX
+=============================================== */
+.thank-you-box {
+  text-align: center;
+  border: 6px dashed #0074d9;         
+  background-color: #fff;
+  padding: 30px;
+  margin: 3rem auto 0;
+  width: 85%;
+  max-width: 700px;
+  font-family: 'Georgia', serif;
   font-size: 1rem;
-  line-height: 1.55;
+  line-height: 1.6;
   color: #000;
+  box-shadow: 0 0 0 4px #fff inset;
 }
 
-.migente-list {
-  list-style-type: disc;
-  margin: 4px 0 0 18px;    
-  padding: 0;
-  line-height: 1.4;       
+.thank-you-box p {
+  margin: 0.5rem 0;
 }
 
-.migente-list li {
-  margin-bottom: 3px;      
+.thank-you-box strong {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-weight: 700;
 }
 
-
-
-
-
-
-/* =========================
-   Mobile Frienldy
-========================= */
-
+/* ===============================================
+   RESPONSIVE STYLES
+=============================================== */
 @media (max-width: 768px) {
-
-  
-  .menu-wrapper {
-    padding: 15px;
+  .wrapper {
+    border: 4px solid #0074d9;
+    padding: 20px;
   }
 
   header img {
-    width: 100%;
-    max-height: 240px;
+    max-width: 100%;
+    height: auto;
   }
 
   nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
+    text-align: center;
+    padding: 0;
   }
 
   nav ul li {
     display: block;
-    margin: 4px 0;
-  }
-
-  nav ul li a {
-    font-size: 1rem;
+    margin: 8px 0;
   }
 
   .menu-columns,
   .pupusa-columns,
-  .entrees-header {
+  .entrees-header,
+  .desserts-beverages .menu-columns,
+  .inner-beverages {
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
   }
 
-  .menu-column,
-  .pupusa-col,
-  .entrees-column {
-    min-width: 100%;
-  }
-
-  .item-title {
-    font-size: 1rem;
-  }
-
-  .price {
-    float: none;
-    display: block;
-    text-align: center;
-    margin-top: 5px;
+  .thank-you-box {
+    width: 95%;
+    padding: 22px;
+    border-width: 4px;
   }
 
   .start-day {
     font-size: 1.8em;
   }
 
-  .combo-row,
-  .bundle-row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   footer {
     font-size: 0.8em;
-    margin-top: 30px;
-    padding: 10px;
+    margin-top: 40px;
   }
 }
 
 @media (max-width: 480px) {
-
-  .menu-wrapper {
+  .wrapper {
     padding: 10px;
   }
 
   header img {
     max-height: 200px;
-  }
-
-  .start-day {
-    font-size: 1.5em;
   }
 
   h2, h3, h4 {
@@ -722,4 +655,18 @@ footer {
   nav ul li a {
     font-size: 0.95rem;
   }
+}
+/*Soups, Desserts, Beverages, aligned to the left*/
+.soups-salads,
+.soups-salads h2,
+.desserts-beverages,
+.desserts-beverages .menu-column,
+.desserts-beverages .menu-column h2,
+.desserts-beverages .item,
+.desserts-beverages .item-title,
+.desserts-beverages .item-description,
+.to-go-items-title,
+.to-go-list {
+  text-align: left !important;
+  margin-left: 0;
 }
