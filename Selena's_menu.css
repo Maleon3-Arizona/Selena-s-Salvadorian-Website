@@ -358,6 +358,13 @@ footer {
   line-height: 1.4;
 }
 
+.mix-note {
+  text-align: left;
+  font-style: italic;      
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .entrees {
   text-align: center;
   margin-top: 40px;
