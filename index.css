@@ -53,10 +53,6 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-main {
-  margin-top: 40px;
-}
-
 h2 {
   font-size: 1.6em;
   font-weight: bold;
@@ -69,35 +65,53 @@ h2 {
 }
 
 .hero {
-  text-align: center;
-  margin-bottom: 40px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 40px 0;
+  padding: 0;
+  text-align: left;
 }
 
 .hero h2 {
-  font-size: 2em;
-  color: #3b2c24;
-  margin-bottom: 10px;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  border-bottom: 2px solid #0074d9;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 .hero p {
-  font-size: 1.2em;
+  font-size: 1.05em;
+  line-height: 1.45;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.home-food-photo {
+  text-align: center;
+  margin: 25px auto 45px;
+}
+
+.home-food-photo img {
+  width: 100%;
+  max-width: 900px;
+  height: 260px;         
+  object-fit: cover;     
+  object-position: center;
+  display: block;
+  margin: 20px auto 40px;
+  border: 4px solid #0074d9;
+  border-radius: 10px;
 }
 
 p {
   margin-bottom: 15px;
   font-size: 1.05em;
-}
-
-a {
-  color: #0074d9;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 footer {
@@ -107,9 +121,9 @@ footer {
   color: #666;
 }
 
-/* =========================
-   Mobile Friendly
-========================= */
+/* -------------------------------------------
+   TABLET RESPONSIVE
+------------------------------------------- */
 @media (max-width: 768px) {
   .wrapper {
     padding: 20px;
@@ -128,25 +142,24 @@ footer {
   }
 
   nav ul li {
-    display: block;
     margin: 6px 0;
   }
 
-  nav ul li a {
-    font-size: 1rem;
+  .hero {
+    max-width: 90%;
   }
 
-  .hero h2 {
-    font-size: 1.6em;
-  }
-
-  .hero p, p {
+  .hero p {
     font-size: 1em;
-    line-height: 1.4;
   }
 
   h2 {
     font-size: 1.3em;
+  }
+
+  .home-food-photo img {
+    max-width: 85%;
+    border-width: 3px;
   }
 
   footer {
@@ -155,6 +168,9 @@ footer {
   }
 }
 
+/* -------------------------------------------
+   MOBILE RESPONSIVE
+------------------------------------------- */
 @media (max-width: 480px) {
   .wrapper {
     padding: 15px;
@@ -165,16 +181,26 @@ footer {
     font-size: 0.95rem;
   }
 
+  .hero {
+    max-width: 100%;
+  }
+
   .hero h2 {
     font-size: 1.4em;
   }
 
-  .hero p, p {
+  .hero p {
     font-size: 0.95em;
   }
 
   h2 {
     font-size: 1.1em;
+  }
+
+  .home-food-photo img {
+    max-width: 100%;
+    border-width: 2px;
+    border-radius: 8px;
   }
 
   footer {
