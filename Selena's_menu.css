@@ -14,9 +14,6 @@ body {
   color: #000;
 }
 
-/* ===============================================
-   MAIN WRAPPER
-=============================================== */
 .wrapper {
   border: 6px solid #0074d9;
   padding: 40px 60px;
@@ -33,9 +30,6 @@ body {
   margin: 0 auto;
 }
 
-/* ===============================================
-   HEADER & NAVIGATION
-=============================================== */
 header {
   text-align: center;
   margin-top: 40px;
@@ -79,9 +73,6 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* ===============================================
-   HOURS
-=============================================== */
 .hours {
   text-align: center;
   font-size: 1.1em;
@@ -92,9 +83,6 @@ nav ul li a:hover {
   margin: 5px 0;
 }
 
-/* ===============================================
-   FEATURE TITLE
-=============================================== */
 .start-day {
   text-align: center;
   color: #FFD700;
@@ -106,9 +94,6 @@ nav ul li a:hover {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* ===============================================
-   GENERAL MENU LAYOUT
-=============================================== */
 .menu-columns {
   display: flex;
   flex-wrap: wrap;
@@ -162,18 +147,14 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-/* ===============================================
-   FOOTER
-=============================================== */
+
 footer {
   text-align: center;
   margin-top: 60px;
   font-size: 0.9em;
   color: #666;
 }
-/* ===============================================
-   PLATE COMBOS
-=============================================== */
+
 .plate-combos {
   margin-top: 50px;
   text-align: center;
@@ -222,9 +203,7 @@ footer {
   font-size: 0.95rem;
   font-style: italic;
 }
-/* ===============================================
-   CHOICES COLUMNS (Tab-Spaced)
-=============================================== */
+
 .choices-columns {
   display: flex;
   justify-content: center;
@@ -296,9 +275,6 @@ footer {
   }
 }
 
-/* ===============================================
-   GRANDE PUPUSAS
-=============================================== */
 .pupusas {
   margin-top: 40px;
   text-align: center;
@@ -382,9 +358,6 @@ footer {
   line-height: 1.4;
 }
 
-/* ===============================================
-   ENTREES SECTION
-=============================================== */
 .entrees {
   text-align: center;
   margin-top: 40px;
@@ -415,9 +388,6 @@ footer {
   text-align: left;
 }
 
-/* ===============================================
-   SPECIAL BOX STYLES
-=============================================== */
 .special-box {
   border: 3px dashed #5ac16a;              
   border-radius: 12px;
@@ -456,9 +426,6 @@ footer {
   text-shadow: 0 0 6px rgba(245,95,95,0.7);
 }
 
-/* ===============================================
-   DESSERTS / BEVERAGES / TO-GO / THANK YOU
-=============================================== */
 .desserts-beverages {
   margin-top: 3rem;
   padding-top: 1rem;
@@ -518,9 +485,6 @@ footer {
   margin-left: 0.4rem;
 }
 
-/* ===============================================
-   BEVERAGES INNER COLUMNS (Right Side)
-=============================================== */
 .inner-beverages {
   display: flex;
   justify-content: space-between;
@@ -669,4 +633,73 @@ footer {
 .to-go-list {
   text-align: left !important;
   margin-left: 0;
+}
+/* ===============================================
+   FINAL SAFE MOBILE FIX (NO DESKTOP CHANGES)
+=============================================== */
+@media (max-width: 480px) {
+
+  /* STOP SQUEEZING */
+  .wrapper {
+    padding: 12px;
+    border-width: 3px;
+  }
+
+  /* KEEP LOGO RESIZING */
+  header img {
+    max-height: 180px;
+  }
+
+  /* MAKE TEXT READABLE */
+  h2, h3, h4 {
+    font-size: 1.15em;
+    text-align: center;
+  }
+
+  p,
+  .item-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* SCRIPT TEXT */
+  .start-day {
+    font-size: 1.6em;
+    margin: 25px 0 20px;
+  }
+
+  /* KEEP ORIGINAL PRICE ALIGNMENT */
+  .item-title {
+    font-size: 1.05rem;
+    justify-content: space-between;
+  }
+
+  .price {
+    float: none;
+    text-align: right;
+  }
+
+  /* STACK ONLY THE MAIN MENU COLUMNS ON MOBILE */
+  .menu-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* ⚠️ DO NOT TOUCH DESSERTS & BEVERAGES ON DESKTOP — ONLY STACK ON MOBILE */
+  .desserts-beverages .menu-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .desserts-beverages .menu-column {
+    min-width: 100%;
+  }
+
+  /* THANK YOU BOX */
+  .thank-you-box {
+    width: 95%;
+    padding: 18px;
+    border-width: 4px;
+    font-size: 0.95rem;
+  }
 }
