@@ -703,3 +703,32 @@ footer {
     font-size: 0.95rem;
   }
 }
+@media (max-width: 768px) {
+  .menu-wrapper {
+    padding: 20px !important;
+  }
+
+  .menu-columns {
+    flex-direction: column !important;
+    gap: 25px !important;
+  }
+
+  .menu-column {
+    min-width: 100% !important;
+  }
+
+  .inner-beverages {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-wrapper {
+    padding: 10px !important;
+  }
+
+  .menu-columns {
+    gap: 20px !important;
+  }
+}
