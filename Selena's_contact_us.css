@@ -128,3 +128,39 @@
     font-weight: bold !important;
   }
 }
+/* ===== MATCH INDEX MOBILE HEADER EXACTLY ===== */
+@media (max-width: 480px) {
+
+  /* LOGO (exact same as index.css) */
+  header img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+    margin: 0 auto 12px;
+    display: block;
+  }
+
+  /* NAVIGATION (exact same as index.css) */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    margin: 10px 0 0 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0074d9;
+    text-decoration: none;
+  }
+}
