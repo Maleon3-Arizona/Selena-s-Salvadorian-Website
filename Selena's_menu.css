@@ -708,5 +708,32 @@ footer {
     gap: 20px !important;
   }
 }
+/* -------------------------------------------
+   MATCH INDEX MOBILE HEADER + NAV ONLY
+------------------------------------------- */
+@media (max-width: 480px) {
+
+  /* Banner */
+  header img {
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 300px !important;
+  }
+
+  /* Navigation */
+  nav ul {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  nav ul li a {
+    font-size: 0.95rem !important;
+    font-weight: bold !important;
+  }
+}
 
 
