@@ -708,3 +708,50 @@ footer {
     gap: 20px !important;
   }
 }
+/* ==========================================================
+   MATCH MOBILE STYLE WITH INDEX.HTML
+========================================================== */
+@media (max-width: 480px) {
+
+  /* LOGO */
+  header img {
+    width: 85%;
+    max-width: 360px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+
+  /* NAVIGATION */
+  nav ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0074d9;
+  }
+
+  /* WRAPPER SIZE */
+  .wrapper {
+    padding: 15px;
+    border-width: 4px;
+  }
+
+  /* HOURS BLOCK */
+  .hours p {
+    font-size: 1.15rem;
+  }
+
+  /* “Start your day with” script */
+  .start-day {
+    font-size: 1.8rem;
+  }
+}
