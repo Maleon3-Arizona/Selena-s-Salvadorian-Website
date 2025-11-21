@@ -709,12 +709,11 @@ footer {
   }
 }
 /* ===============================================
-   UNIVERSAL MOBILE LOGO + NAV FIX (MATCH INDEX)
-   Put at bottom of CSS
+   UNIVERSAL MOBILE LOGO FIX — MATCH INDEX.HTML
 =============================================== */
 @media (max-width: 480px) {
 
-  /* MATCH LOGO SIZE FROM INDEX */
+  /* LOGO */
   header img {
     width: 85% !important;
     max-width: 360px !important;
@@ -723,35 +722,26 @@ footer {
     display: block !important;
   }
 
-  /* MATCH NAVIGATION STYLE FROM INDEX */
+  /* NAVIGATION */
   nav ul {
     text-align: center !important;
     padding: 0 !important;
-    margin-top: 15px !important;
   }
 
   nav ul li {
     display: block !important;
-    margin: 12px 0 !important;
+    margin: 10px 0 !important;
   }
 
   nav ul li a {
     font-size: 1.3rem !important;
     font-weight: 700 !important;
-    text-decoration: none !important;
     color: #0074d9 !important;
   }
 
-  /* MATCH BORDER + PADDING LIKE INDEX */
-  .wrapper,
-  .menu-wrapper {
-    border-width: 6px !important;
+  /* MATCH WRAPPER */
+  .wrapper {
+    border-width: 4px !important;
     padding: 15px !important;
-  }
-
-  /* MATCH “Start your day with!” SCRIPT SIZE */
-  .start-day {
-    font-size: 1.8rem !important;
-    margin-top: 30px !important;
   }
 }
