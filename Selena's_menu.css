@@ -57,6 +57,7 @@ nav {
   margin-bottom: 10px;
 }
 
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -381,12 +382,6 @@ footer {
   font-size: 1rem;
   line-height: 1.4;
 }
-.mixes {
-  text-align: left;
-  font-style: italic;      /* optional, keep if you like the look */
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 
 /* ===============================================
    ENTREES SECTION
@@ -676,100 +671,15 @@ footer {
   text-align: left !important;
   margin-left: 0;
 }
-/* --- MOBILE FIX FOR MENU PAGE --- */
-@media (max-width: 768px) {
-
-  .menu-wrapper {
-    padding: 20px !important;
-  }
-
-  .menu-columns {
-    flex-direction: column !important;
-    gap: 25px !important;
-  }
-
-  .menu-column {
-    min-width: 100% !important;
-  }
-
-  .inner-beverages {
-    flex-direction: column !important;
-    gap: 20px !important;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .menu-wrapper {
-    padding: 10px !important;
-  }
-
-  .menu-columns {
-    gap: 20px !important;
-  }
-}
-/* -------------------------------------------
-   MATCH INDEX MOBILE HEADER + NAV ONLY
-------------------------------------------- */
-@media (max-width: 480px) {
-
-  /* Banner */
-  header img {
-    max-width: 100% !important;
-    height: auto !important;
-    max-height: 300px !important;
-  }
-
-  /* Navigation */
-  nav ul {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 8px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  nav ul li a {
-    font-size: 0.95rem !important;
-    font-weight: bold !important;
-  }
-}
-/* ===== MATCH INDEX MOBILE HEADER EXACTLY ===== */
-@media (max-width: 480px) {
-
-  /* LOGO (exact same as index.css) */
-  header img {
+/* ----- HOME PAGE ONLY PHOTO FIX ----- */
+.home-food-photo img {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 280px;
-    object-fit: contain;
-    margin: 0 auto 12px;
+    max-width: 900px;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
     display: block;
-  }
-
-  /* NAVIGATION (exact same as index.css) */
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    gap: 8px;
-    margin: 10px 0 0 0;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 5px 0;
-  }
-
-  nav ul li a {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #0074d9;
-    text-decoration: none;
-  }
+    margin: 20px auto 40px;
+    border: 4px solid #0074d9;
+    border-radius: 10px;
 }
-
-
