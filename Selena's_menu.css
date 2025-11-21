@@ -708,3 +708,55 @@ footer {
     gap: 20px !important;
   }
 }
+/* ============================================================
+   FINAL MOBILE FIX — MATCH INDEX.HTML EXACTLY
+============================================================ */
+@media (max-width: 480px) {
+
+  /* LOGO — SAME AS INDEX */
+  header img {
+    width: 85% !important;
+    max-width: 360px !important;
+    height: auto !important;
+    margin: 20px auto !important;
+    display: block !important;
+  }
+
+  /* NAV — SAME AS INDEX */
+  nav ul {
+    text-align: center !important;
+    padding: 0 !important;
+  }
+
+  nav ul li {
+    display: block !important;
+    margin: 10px 0 !important;
+  }
+
+  nav ul li a {
+    font-size: 0.95rem !important;
+    font-weight: bold !important;
+    color: #0074d9 !important;
+  }
+
+  /* WRAPPER — SAME AS INDEX */
+  .wrapper {
+    padding: 15px !important;
+    border-width: 3px !important;
+  }
+
+  .menu-wrapper {
+    padding: 15px !important;
+  }
+
+  /* HEADINGS — SAME AS INDEX */
+  h2, h3, h4 {
+    font-size: 1.1em !important;
+  }
+
+  /* PARAGRAPH TEXT — SAME AS INDEX */
+  p, .item-description {
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+  }
+}
