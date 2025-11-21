@@ -6,6 +6,12 @@
   <title>Selena's Salvadorian Restaurant – Home</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+  function requestDesktop() {
+    document.querySelector("meta[name=viewport]")
+      .setAttribute("content", "width=1024"); 
+}
+</script>
 </head>
 <body>
   <div class="wrapper">
@@ -25,7 +31,7 @@
           </ul>
         </nav>
       </div>
-
+      <a href="#" onclick="requestDesktop()">View Desktop Version</a>
       <div class="hours">
         <p><strong>EST. SINCE 2014</strong></p>
         <p><u>Monday – Saturday</u><br>10AM – 9PM</p>
