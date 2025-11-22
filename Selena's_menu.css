@@ -415,7 +415,14 @@ footer {
   min-width: 300px;
   text-align: left;
 }
-
+.caribbean-heading {
+  color: #0074d9 !important;
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive !important;
+  font-size: 1.7rem !important;
+  font-weight: normal !important;
+  margin-bottom: 15px !important;
+  text-align: center !important;
+}
 /* ===============================================
    SPECIAL BOX STYLES
 =============================================== */
@@ -641,7 +648,7 @@ footer {
   }
 
   header img {
-    max-height: 400px;
+    max-height: 200px;
   }
 
   h2, h3, h4 {
@@ -721,8 +728,13 @@ footer {
     font-size: 1rem !important;
   }
 }
-/* --- MENU PAGE MOBILE CENTER FIX --- */
+/* ================================
+   MOBILE FIX PATCH (SAFE)
+   Only affects screens < 768px
+================================ */
 @media (max-width: 768px) {
+
+  /* Center entire menu */
   .menu-columns,
   .pupusa-columns,
   .entrees-header,
@@ -733,19 +745,62 @@ footer {
     text-align: center !important;
   }
 
+  /* Center each column */
   .menu-column,
   .pupusa-col,
   .entrees-column,
   .desserts-beverages .menu-column,
   .inner-col {
     width: 100% !important;
-    max-width: 500px !important;
+    max-width: 520px !important;
+    text-align: center !important;
   }
 
+  /* Fix prices floating left */
   .item-title,
   .item-description,
   .price {
     text-align: center !important;
     float: none !important;
+  }
+
+  /* Make header image bigger */
+  header img,
+  .logo-container img {
+    max-width: 340px !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Navigation fix */
+  nav ul {
+    padding: 0 !important;
+    margin: 10px auto !important;
+    display: block !important;
+    text-align: center !important;
+  }
+
+  nav ul li {
+    margin: 8px 0 !important;
+    display: block !important;
+  }
+
+  /* Fix Caribbean title color */
+  .caribbean-title,
+  .caribbean-heading {
+    color: #0074d9 !important;
+    text-align: center !important;
+  }
+
+  /* Fix desserts/beverages mobile alignment */
+  .desserts-beverages .item-title,
+  .desserts-beverages .item-description {
+    text-align: center !important;
+  }
+
+  /* Thank-you box mobile spacing */
+  .thank-you-box {
+    width: 95% !important;
+    padding: 20px !important;
   }
 }
