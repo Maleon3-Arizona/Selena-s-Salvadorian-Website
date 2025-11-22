@@ -741,3 +741,89 @@ footer {
     line-height: 1.35;
   }
 }
+/* ===========================
+   FIX MOBILE FOR MENU PAGE
+   (Final Working Version)
+   =========================== */
+@media (max-width: 768px) {
+
+  /* Fix wrapper so content centers */
+  .wrapper,
+  .menu-wrapper {
+    padding: 20px !important;
+    max-width: 100% !important;
+    border-width: 4px !important;
+  }
+
+  /* Fix menu columns (THIS is the main issue) */
+  .menu-columns,
+  .pupusa-columns,
+  .entrees-header,
+  .desserts-beverages .menu-columns,
+  .inner-beverages {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* Fix each column width */
+  .menu-column,
+  .pupusa-col,
+  .entrees-column,
+  .desserts-beverages .menu-column,
+  .inner-col {
+    width: 100% !important;
+    max-width: 520px !important;
+    text-align: center !important;
+  }
+
+  /* Fix item titles + prices */
+  .item-title {
+    display: block !important;
+    text-align: center !important;
+  }
+
+  .price {
+    float: none !important;
+    display: block !important;
+    margin: 4px auto 10px !important;
+    text-align: center !important;
+  }
+
+  /* Fix descriptions */
+  .item-description {
+    text-align: center !important;
+    margin-left: 0 !important;
+  }
+
+  /* Fix TO-GO items */
+  .to-go-list,
+  .desserts-beverages .item-title,
+  .desserts-beverages .item-description {
+    text-align: center !important;
+  }
+
+  /* Fix Pupusa specials circle */
+  .specials {
+    margin: 25px auto !important;
+  }
+
+  /* Fix "caribbean" header */
+  .caribbean-heading {
+    font-size: 1.9rem !important;
+    text-align: center !important;
+  }
+
+  /* Fix desserts layout */
+  .desserts-beverages .menu-columns {
+    gap: 20px !important;
+  }
+
+  /* Fix thank-you box */
+  .thank-you-box {
+    width: 95% !important;
+    padding: 20px !important;
+  }
+}
