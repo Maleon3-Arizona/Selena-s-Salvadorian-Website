@@ -579,19 +579,23 @@ footer {
 }
 
 /*Soups, Desserts, Beverages, aligned to the left*/
-.soups-salads,
-.soups-salads h2,
-.desserts-beverages,
-.desserts-beverages .menu-column,
-.desserts-beverages .menu-column h2,
-.desserts-beverages .item,
-.desserts-beverages .item-title,
-.desserts-beverages .item-description,
-.to-go-items-title,
-.to-go-list {
-  text-align: left !important;
-  margin-left: 0;
+/* Desktop formatting ONLY (prevents it from breaking mobile) */
+@media (min-width: 769px) {
+  .soups-salads,
+  .soups-salads h2,
+  .desserts-beverages,
+  .desserts-beverages .menu-column,
+  .desserts-beverages .menu-column h2,
+  .desserts-beverages .item,
+  .desserts-beverages .item-title,
+  .desserts-beverages .item-description,
+  .to-go-items-title,
+  .to-go-list {
+      text-align: left !important;
+      margin-left: 0;
+  }
 }
+
 /* ----- HOME PAGE ONLY PHOTO FIX ----- */
 .home-food-photo img {
     width: 100%;
@@ -604,6 +608,7 @@ footer {
     border: 4px solid #0074d9;
     border-radius: 10px;
 }
+
 /* ===============================================
    FINAL MOBILE LAYOUT (Michael XL Version)
    Applies to all screens under 768px
