@@ -579,7 +579,6 @@ footer {
 }
 
 /*Soups, Desserts, Beverages, aligned to the left*/
-/* Desktop formatting ONLY (prevents it from breaking mobile) */
 @media (min-width: 769px) {
   .soups-salads,
   .soups-salads h2,
@@ -591,7 +590,7 @@ footer {
   .desserts-beverages .item-description,
   .to-go-items-title,
   .to-go-list {
-      text-align: left !important;
+      text-align: left;
       margin-left: 0;
   }
 }
