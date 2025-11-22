@@ -281,21 +281,6 @@ footer {
   opacity: 0.7;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .choices-columns {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .choices-columns::before {
-    display: none;
-  }
-
-  .choice-list {
-    gap: 1rem;
-  }
-}
 
 /* ===============================================
    GRANDE PUPUSAS
@@ -593,77 +578,6 @@ footer {
   font-weight: 700;
 }
 
-/* ===============================================
-   RESPONSIVE STYLES
-=============================================== */
-@media (max-width: 768px) {
-  .wrapper {
-    border: 4px solid #0074d9;
-    padding: 20px;
-  }
-
-  header img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  nav ul {
-    text-align: center;
-    padding: 0;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 8px 0;
-  }
-
-  .menu-columns,
-  .pupusa-columns,
-  .entrees-header,
-  .desserts-beverages .menu-columns,
-  .inner-beverages {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .thank-you-box {
-    width: 95%;
-    padding: 22px;
-    border-width: 4px;
-  }
-
-  .start-day {
-    font-size: 1.8em;
-  }
-
-  footer {
-    font-size: 0.8em;
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .wrapper {
-    padding: 10px;
-  }
-
-  header img {
-    max-height: 200px;
-  }
-
-  h2, h3, h4 {
-    font-size: 1.1em;
-  }
-
-  p, .item-description {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-
-  nav ul li a {
-    font-size: 0.95rem;
-  }
-}
 /*Soups, Desserts, Beverages, aligned to the left*/
 .soups-salads,
 .soups-salads h2,
@@ -690,7 +604,7 @@ footer {
     border: 4px solid #0074d9;
     border-radius: 10px;
 }
-//* ===============================================
+/* ===============================================
    FINAL MOBILE LAYOUT (Michael XL Version)
    Applies to all screens under 768px
 =============================================== */
