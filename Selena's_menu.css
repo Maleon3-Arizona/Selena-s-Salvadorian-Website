@@ -721,3 +721,31 @@ footer {
     font-size: 1rem !important;
   }
 }
+/* --- MENU PAGE MOBILE CENTER FIX --- */
+@media (max-width: 768px) {
+  .menu-columns,
+  .pupusa-columns,
+  .entrees-header,
+  .desserts-beverages .menu-columns,
+  .inner-beverages {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .menu-column,
+  .pupusa-col,
+  .entrees-column,
+  .desserts-beverages .menu-column,
+  .inner-col {
+    width: 100% !important;
+    max-width: 500px !important;
+  }
+
+  .item-title,
+  .item-description,
+  .price {
+    text-align: center !important;
+    float: none !important;
+  }
+}
