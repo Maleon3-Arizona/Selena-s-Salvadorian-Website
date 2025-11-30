@@ -845,4 +845,21 @@ footer {
   border: 3px solid #0074d9; /* ✔ BLUE BORDER */
   border-radius: 8px;       /* Matching rounded corners */
 }
+/* MOBILE FIX: Center everything properly */
+@media (max-width: 768px) {
+  .wrapper,
+  .menu-wrapper {
+    padding: 12px;     /* reduces left/right push */
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .menu-photo,
+  .item-image img {
+    max-width: 90%;    /* no overflow */
+    height: auto;
+    margin: 12px auto;
+  }
+}
 
