@@ -852,7 +852,7 @@ footer {
     padding: 12px;     /* reduces left/right push */
     margin: 0 auto;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .menu-photo,
