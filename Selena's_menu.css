@@ -830,7 +830,7 @@ footer {
 }
 .item-image img {
   width: 420px;
-  height: auto; /* keeps correct aspect ratio */
+  height: 400px; /* keeps correct aspect ratio */
   display: block;
   margin: 12px auto;
   border: 3px solid #0074d9;
@@ -839,7 +839,7 @@ footer {
 .menu-photo {
   width: 100%;
   max-width: 950px;
-  height: 330px; /* keeps correct aspect ratio */
+  height: 400px; /* keeps correct aspect ratio */
   display: block;
   margin: 12px auto;
   border: 3px solid #0074d9; /* ✔ BLUE BORDER */
