@@ -134,12 +134,12 @@ nav ul li a:hover {
   letter-spacing: 0.5px;
   font-size: clamp(22px, 2.2vw, 28px);
 }
-/* Center these specific section headings */
+/* Center headings */
 .soups-salads h2,
 .desserts-beverages h2,
 .menu-column h2,        
 .to-go-items-title {
-    text-align: center !important;
+    text-align: center ;
 }
 
 .item-title {
@@ -251,8 +251,7 @@ footer {
   letter-spacing: 0.5px;
   margin-bottom: 8px;
 }
-/* Spacing for Choices of Pupusas + Tamales */
-/* Spacing for Choices of Pupusas / Tamales */
+/* Spacing for Pupusas + Tamales */
 .choice-list {
   display: inline-flex;
   flex-wrap: wrap;
@@ -280,7 +279,6 @@ footer {
   background-color: #0074d9;
   opacity: 0.7;
 }
-
 
 /* ===============================================
    GRANDE PUPUSAS
@@ -402,12 +400,12 @@ footer {
   text-align: left;
 }
 .caribbean-heading {
-  color: #0074d9 !important;
-  font-family: "Brush Script MT", "Lucida Handwriting", cursive !important;
-  font-size: 1.7rem !important;
-  font-weight: normal !important;
-  margin-bottom: 15px !important;
-  text-align: center !important;
+  color: #0074d9;
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  font-size: 1.7rem;
+  font-weight: normal;
+  margin-bottom: 15px;
+  text-align: center;
 }
 /* ===============================================
    SPECIAL BOX STYLES
@@ -596,7 +594,6 @@ footer {
   }
 }
 
-/* ----- HOME PAGE ONLY PHOTO FIX ----- */
 .home-food-photo img {
     width: 100%;
     max-width: 900px;
@@ -609,19 +606,13 @@ footer {
     border-radius: 10px;
 }
 
-/* ===============================================
-   FINAL MOBILE LAYOUT (Michael XL Version)
-   Applies to all screens under 768px
-=============================================== */
 @media (max-width: 768px) {
 
-  /* Wrapper */
   .wrapper {
     border-width: 4px;
     padding: 16px;
   }
 
-  /* --- XL HEADER IMAGE --- */
   header img,
   .logo-container img {
     max-width: 380px !important;
@@ -631,7 +622,6 @@ footer {
     display: block;
   }
 
-  /* Navigation */
   nav {
     width: 100%;
     margin: 10px 0 20px 0;
@@ -654,40 +644,38 @@ footer {
     font-size: 1.15rem;
   }
 
-  /* Center ALL menu layouts */
   .menu-columns,
   .pupusa-columns,
   .entrees-header,
   .desserts-beverages .menu-columns,
   .inner-beverages {
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    gap: 25px !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
   }
 
-  /* Center every column */
   .menu-column,
   .pupusa-col,
   .entrees-column,
   .desserts-beverages .menu-column,
   .inner-col {
-    width: 100% !important;
-    max-width: 520px !important;
-    text-align: center !important;
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
   }
 
   /* Fix title, description, price alignment */
   .item-title,
   .item-description,
   .price {
-    float: none !important;
-    text-align: center !important;
+    float: none;
+    text-align: center;
   }
 
   /* Center plate combos */
   .combo-list {
-    text-align: center !important;
+    text-align: center;
   }
 
   .combo-row {
@@ -699,22 +687,22 @@ footer {
     margin: 0 auto;
   }
 
-  /* Pupusa specials circle centered */
+
   .pupusa-col .specials {
-    margin: 20px auto !important;
+    margin: 20px auto;
   }
 
   /* Fix Caribbean title */
   .caribbean-heading {
-    color: #0074d9 !important;
-    text-align: center !important;
-    font-size: 1.9rem !important;
+    color: #0074d9 ;
+    text-align: center ;
+    font-size: 1.9rem;
   }
 
   /* Fix desserts text */
   .desserts-beverages .item-title,
   .desserts-beverages .item-description {
-    text-align: center !important;
+    text-align: center;
   }
 
   /* Thank-you box */
@@ -730,7 +718,6 @@ footer {
   }
 }
 
-/* Extra small screens (iPhone SE / older phones) */
 @media (max-width: 480px) {
 
   h2, h3, h4 {
@@ -742,18 +729,15 @@ footer {
     line-height: 1.35;
   }
 }
-/* ===========================
-   FIX MOBILE FOR MENU PAGE
-   (Final Working Version)
-   =========================== */
+
 @media (max-width: 768px) {
 
   /* Fix wrapper so content centers */
   .wrapper,
   .menu-wrapper {
-    padding: 20px !important;
-    max-width: 100% !important;
-    border-width: 4px !important;
+    padding: 20px;
+    max-width: 100%;
+    border-width: 4px;
   }
 
   /* Fix menu columns (THIS is the main issue) */
@@ -775,57 +759,57 @@ footer {
   .entrees-column,
   .desserts-beverages .menu-column,
   .inner-col {
-    width: 100% !important;
-    max-width: 520px !important;
-    text-align: center !important;
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
   }
 
   /* Fix item titles + prices */
   .item-title {
-    display: block !important;
-    text-align: center !important;
+    display: block;
+    text-align: center;
   }
 
   .price {
-    float: none !important;
-    display: block !important;
-    margin: 4px auto 10px !important;
-    text-align: center !important;
+    float: none;
+    display: block;
+    margin: 4px auto 10px;
+    text-align: center;
   }
 
   /* Fix descriptions */
   .item-description {
-    text-align: center !important;
-    margin-left: 0 !important;
+    text-align: center;
+    margin-left: 0;
   }
 
   /* Fix TO-GO items */
   .to-go-list,
   .desserts-beverages .item-title,
   .desserts-beverages .item-description {
-    text-align: center !important;
+    text-align: center;
   }
 
   /* Fix Pupusa specials circle */
   .specials {
-    margin: 25px auto !important;
+    margin: 25px auto;
   }
 
   /* Fix "caribbean" header */
   .caribbean-heading {
-    font-size: 1.9rem !important;
-    text-align: center !important;
+    font-size: 1.9rem;
+    text-align: center;
   }
 
   /* Fix desserts layout */
   .desserts-beverages .menu-columns {
-    gap: 20px !important;
+    gap: 20px;
   }
 
   /* Fix thank-you box */
   .thank-you-box {
-    width: 95% !important;
-    padding: 20px !important;
+    width: 95%;
+    padding: 20px;
   }
 }
 .item-image img {
